@@ -15,9 +15,9 @@ body{
 
 .header{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/img/header-image.png);
-    background-size:cover;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/img/header-image.png);
+    background-size:calc(105% - 20px);
     background-position:center;
     position: relative;
     padding: 10px 8%;
@@ -82,14 +82,14 @@ nav{
 
 .header-content .prim-hd{
     display: inline;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 50px;
-    font-weight: 700;
+    font-weight: 900;
     max-width: 650px;
 }
 .header-content .sec-hd{
     font-weight: 600;
-    margin: 15px;
+    margin: 20px;
 
 }
 .header-content .pg-hd{
@@ -304,7 +304,7 @@ input[type="radio"]{
 
         position: unset;
         transform: none;
-        padding-top: 150px;
+        padding-top: 50px;
     }
     .header .prim-hd{
         font-size:30px ;
@@ -398,4 +398,82 @@ input[type="radio"]{
         }
    
 
+}
+
+@media only screen and (min-width:601px) and (max-width:800px){
+
+    .features .row{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .features .feat-hd {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+
+    .text-col p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+     
+    .signup input,
+    .signup2 input {
+      padding: 12px;
+    }
+    
+    .signup .submit-btn{
+     border: 0;
+     outline: none;
+     background:red;
+     color: #fff;
+     padding: 10px 4px;
+     font-size: 12px;
+     font-weight: 500;
+     border-radius: 4px;
+     margin-left:10px ;
+     cursor: pointer;
+   
+    }
+    .signup2 .submit-btn2{
+     border: 0;
+     outline: none;
+     background:red;
+     color: #fff;
+     padding: 10px 4px;
+     font-size: 12px;
+     font-weight: 500;
+     border-radius: 4px;
+     margin-left:10px ;
+     cursor: pointer;
+    }
+ 
+
+
+
+
+}
+
+@media only screen and (min-width:801px) and (max-width:1000px){
+
+    .features .row{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+       
+    .features .feat-hd {
+        font-size: 40px;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+
+    .text-col p{
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
