@@ -305,6 +305,9 @@ input[type="radio"]{
     .logo{
         width: 100px;
     }
+    .header {
+        background-size:center;
+    }
     nav .btn{
         padding: 5px 10px;
     }
@@ -410,7 +413,9 @@ input[type="radio"]{
 }
 
 @media only screen and (min-width:601px) and (max-width:800px){
-
+.header{
+     background-size:center;
+}
     .features .row{
         display: flex;
         width: 100%;
@@ -468,6 +473,10 @@ input[type="radio"]{
 
 @media only screen and (min-width:801px) and (max-width:1000px){
 
+
+    .header{
+     background-size:center;
+        
     .features .row{
         display: flex;
         width: 100%;
