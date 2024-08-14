@@ -310,8 +310,9 @@ input[type="radio"]{
         width: 100px;
     }
     .header {
-        background-size:center;
-        height:80vh;
+        background-size:cover;
+        height:75vh;
+        
     }
     nav .btn{
         padding: 5px 10px;
@@ -321,11 +322,29 @@ input[type="radio"]{
 
         position: unset;
         transform: none;
-        padding-top: 50px;
+        padding-top: 25px;
     }
     .header .prim-hd{
-        font-size:30px ;
+        font-size:26px ;
+        font-weight: 700;
+        word-spacing: 1px;
+        line-height: 30px;
     }
+
+    .header-content .sec-hd{
+        font-size: 18px;
+        font-weight:400;
+        margin: 10px;
+    
+    }
+    .header-content .pg-hd{
+        font-size: 15px;
+        word-spacing: 1px;
+         font-weight:300;
+        margin-top: 10px;
+    }
+
+
    .signup input,
    .signup2 input {
      padding: 12px;
@@ -368,7 +387,10 @@ input[type="radio"]{
         flex-basis: 100%;
         padding: 0;
     }
-    
+
+    .features {
+        padding: 0px 0;
+    }
     .features .media-col{
         flex-basis: 100%;
         padding: 0;
