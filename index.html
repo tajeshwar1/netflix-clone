@@ -178,6 +178,29 @@
   </button>
   <p class="copy-txt" >Netflix India</p>
  </div>
- 
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const forms = document.querySelectorAll("form");
+
+    forms.forEach((form) => {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const emailInput = form.querySelector("input[type='email']");
+        const email = emailInput.value.trim();
+
+        if (!email || !email.includes("@")) {
+          alert("Please enter a valid email address.");
+        } else {
+          alert(`Thanks for signing up with: ${email}`);
+          emailInput.value = "";
+        }
+      });
+    });
+  });
+  
+
+</script>
+
+
 </body>
 </html>
